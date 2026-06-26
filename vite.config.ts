@@ -17,7 +17,7 @@ export default defineConfig({
     vue(),
     robots(),
     sitemap({
-      hostname: 'https://dakerele.vercel.app/',
+      hostname: 'https://akereledavid.vercel.app/',
       basePath: '',
       changefreq: 'hourly', // default: 'daily'
       priority: 1,

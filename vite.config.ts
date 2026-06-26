@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  base: '/',
   build: {
     sourcemap: true,
     // terserOptions:
@@ -17,7 +17,7 @@ export default defineConfig({
     vue(),
     robots(),
     sitemap({
-      hostname: 'https://akereledavid.vercel.app/',
+      hostname: 'https://dakerele.vercel.app/',
       basePath: '',
       changefreq: 'hourly', // default: 'daily'
       priority: 1,

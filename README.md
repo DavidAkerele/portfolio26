@@ -1,84 +1,112 @@
-# Ebraheem Alhetari - Full-Stack Developer Portfolio
+# David Akerele — Portfolio
 
-### Enjoying my project? Please show your appreciation by starring it on GitHub! ⭐
+Personal portfolio website for **David Akerele**, Software Engineer & Frontend Architect based in Manchester, UK. MSc Computer Science student specialising in frontend architecture, full-stack development, and AI-powered web experiences.
 
-Welcome to my portfolio! I'm **Ebraheem Alhetari**, a full-stack developer and freelancer with a passion for creating immersive web experiences. Specializing in **Vue.js**, **GSAP** animations, and **Tailwind CSS**, I craft elegant, responsive, and fully animated websites.
+**Live:** [akereledavid.vercel.app](https://akereledavid.vercel.app)  
+**GitHub:** [github.com/DavidAkerele](https://github.com/DavidAkerele)  
+**LinkedIn:** [linkedin.com/in/david-akerele-38837623a](https://www.linkedin.com/in/david-akerele-38837623a/)
 
-## 📜 Important Note
+---
 
-If you would like to use or modify this portfolio, please:
+## Tech Stack
 
-1. **Star** this repository on GitHub.
-2. **Fork** the repository instead of cloning or downloading it directly.
-3. **Credit** Ebraheem Alhetari as the original coder and animator, and acknowledge **Huy Nguyen** for the original UI design.
+| Layer | Technology |
+|---|---|
+| Framework | Vue 3 (Composition API, `<script setup>`, TypeScript) |
+| Build tool | Vite 6 + `@vitejs/plugin-vue` |
+| Styling | Tailwind CSS v4 (`@tailwindcss/vite`) |
+| Animation | GSAP 3 with ScrollTrigger & MotionPathPlugin |
+| Scroll | Lenis smooth scroll (RAF loop) |
+| Fonts | Cabinet Grotesk Variable (`font-title`) · Bricolage Grotesque (`font-fancy`) |
+| Utilities | VueUse · moment-timezone · vue3-lottie |
+| SEO | vite-plugin-sitemap · vite-plugin-robots · JSON-LD structured data |
 
-In the `data.ts` file, there are resource links that credit the original designer and other relevant sources:
+---
 
-```ts
-const resourceLinks = [
-  {
-    label: 'Huy Nguyen (the UI designer)',
-    url: 'https://www.huyng.xyz',
-  },
-  {
-    label: 'Ebraheem Alhetari',
-    url: 'https://github.com/Hetari/portfolio',
-  },
-```
+## Sections
 
-By following these guidelines, you'll be respecting the effort and collaboration behind this project.
+- **Loading Screen** — animated SVG curve wipe with the Akerele name reveal
+- **Hero** — full-viewport sticky section with GSAP per-character name entrance (`DAVID AKERELE`)
+- **About Me** — bio, location, and MSc CS context; scroll-driven section leave animation
+- **Services** — 6 sticky-scroll cards: Frontend Engineering · Full-Stack Development · AI-Powered Solutions · Mobile Development · Hardware Engineering · Networking
+- **Selected Works** — 5 client projects as landscape cards (B&W on desktop, full colour on hover); each card has a **View Live** external link and a **Case Study** overlay with project description, challenge, and solution
+- **Testimonials** — 4 client testimonials with animated quote transitions (Slider component)
+- **Contact** — CTA section linking to `akereledavidd@gmail.com`
+- **Footer** — live local time clock (Europe/London), social links, navigation
 
+---
 
-## 🛠 Tech Stack
+## Featured Projects
 
-This portfolio showcases my expertise in modern web technologies, including:
+| Project | Category | URL |
+|---|---|---|
+| Whole Purple | Full-Stack & E-Commerce | [wholepurple.vercel.app](https://wholepurple.vercel.app/) |
+| Sporting Lagos FC | Frontend & Sports | [sportinglagos.com](https://sportinglagos.com) |
+| OnePortal Estates | Frontend & Real Estate | [oneportalestates.com](https://oneportalestates.com) |
+| Treasure Trove Sewing | E-Commerce & Retail | [treasuretrovesewingmachines.com](https://www.treasuretrovesewingmachines.com/) |
+| Dynasty Africa | Frontend & Creative Agency | [dynastyafrica.com](https://www.dynastyafrica.com/) |
 
-- [**Vue.js**](https://vuejs.org/) (with Composition API & TypeScript)
-- [**GSAP**](https://greensock.com/gsap/) (for stunning animations)
-- [**Tailwind CSS**](https://tailwindcss.com/) (for efficient styling)
-- [**Lenis**](https://lenis.darkroom.engineering/) (smooth scrolling)
-- [**Vite.js**](https://vitejs.dev/) (fast development and build tool)
+---
 
-## ✨ Features
-
-The entire portfolio is a dynamic and animated experience, designed to capture attention and showcase my skills. A key aspect is its visually captivating UI, originally designed by the talented freelancer **Huy Nguyen**, whom I acknowledge and credit for allowing me to use and clone his design.
-
-## 🔍 Portfolio Sections
-
-- **Loading Screen**: A fully animated, immersive start to the experience.
-- **Hero**: A powerful introduction highlighting my name and expertise.
-- **Services**: An overview of what I offer as a developer.
-- **My Works**: A collection of my best projects, demonstrating my skills.
-- **About Me**: A deep dive into who I am as a developer.
-- **Testimonials**: Real feedback from people I've worked with.
-- **Contact Me**: Easily get in touch via the contact form.
-- **Footer**: Site navigation and social links.
-
-## 🚀 Getting Started
-
-To view the project locally, follow these steps:
+## Running Locally
 
 ```bash
-# Clone the repository
-git clone https://github.com/hetari/portfolio
-
-# Navigate to the project directory
-cd portfolio
-
-# Install dependencies
+git clone https://github.com/DavidAkerele/portfolio26.git
+cd portfolio26
 npm install
-
-# Run the development server
 npm run dev
 ```
 
-You can now view the portfolio on `http://localhost:5173` in your browser.
+Runs on `http://localhost:5173/portfolio/` by default.
 
-## 🌱 Future Plans
+```bash
+# Type-check + production build
+npm run build
 
-I am continuously improving my portfolio and plan to add **Arabic language support** soon, making it fully bilingual for both English and Arabic users.
+# Preview the production build
+npm run preview
+```
 
-## 🎨 Acknowledgments
+---
 
-I want to extend a special thank you to **Huy Nguyen** for his original UI design, which I have cloned with his permission. His creative vision has been instrumental in shaping the look and feel of this portfolio.
-# portfolio26
+## Project Structure
+
+```
+src/
+├── animations/       # GSAP timeline helpers (entrance, scroll, navbar)
+├── assets/
+│   ├── fonts/        # Cabinet Grotesk Variable + Switzer Variable
+│   ├── images/       # Project screenshots + testimonial avatars
+│   └── videos/       # Contact section video asset
+├── components/
+│   ├── common/       # Button, Nav, Link
+│   ├── design/       # LoadingScreen, Cursor, Slider, Footer, ProjectOverlay
+│   └── sections/     # Hero, aboutMe, Services, Works, Contact, People
+├── data.ts           # Social links, nav links, location, hero text
+├── functions/        # textSplitterIntoChar, getAvailableForWorkDate
+├── main.ts           # App entry — Lenis RAF loop exported for global use
+└── style.css         # Tailwind v4 theme, custom heading utilities, global fonts
+```
+
+---
+
+## Key Implementation Notes
+
+**Per-character text animation** — `textSplitterIntoChar()` wraps each character in `<span class="letters translate-y-[120%]">`. GSAP then animates `y → 0` with stagger on scroll trigger.
+
+**Hero name** — `MyEnName.vue` renders `DAVID AKERELE` as inline `<span>` elements with class `letter-char`, sized at `clamp(2rem, 11vw, 10rem)`. The GSAP entrance selector targets `.letter-char`.
+
+**Sticky services** — 6 cards use calculated `top` and `margin-bottom` values (`8vh` base, `4em` step per card) so each card stacks cleanly and the last card's full content remains visible in the viewport.
+
+**Works hover effect** — screenshots use `md:grayscale md:brightness-75` by default, transitioning to `md:group-hover:grayscale-0 md:group-hover:brightness-100` on hover. Mobile shows full colour.
+
+**Project overlay** — `ProjectOverlay.vue` is teleported to `<body>` and uses a CSS `translateY` transition. Contains the full case study: screenshot, tech stack, description, challenge, and solution.
+
+**Lenis + GSAP** — the Lenis instance is exported from `main.ts` and imported wherever scroll locking is needed (nav open/close, project overlay).
+
+---
+
+## Contact
+
+**Email:** akereledavidd@gmail.com  
+**X:** [@DdAkelz](https://x.com/DdAkelz)

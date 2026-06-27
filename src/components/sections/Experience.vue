@@ -100,7 +100,7 @@
                   <img
                     :src="exp.logo"
                     :alt="exp.company"
-                    class="max-h-14 w-full max-w-[10rem] object-contain object-center mix-blend-multiply grayscale"
+                    class="max-h-20 w-full max-w-[13rem] object-contain object-center mix-blend-multiply grayscale"
                   />
                 </div>
 

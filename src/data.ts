@@ -11,16 +11,16 @@ const navLinks = [
     url: '#services',
   },
   {
+    label: 'Experience',
+    url: '#experience',
+  },
+  {
     label: 'Projects',
     url: '#works',
   },
   {
     label: 'About',
     url: '#about-me-section',
-  },
-  {
-    label: 'Testimonials',
-    url: '#testimonials-section',
   },
   {
     label: 'Contact',

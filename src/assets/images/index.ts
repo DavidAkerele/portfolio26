@@ -16,6 +16,13 @@ import avatarSl from './avatar-sl.svg';
 import avatarDa from './avatar-da.svg';
 import avatarOp from './avatar-op.svg';
 import avatarWp from './avatar-wp.svg';
+import logoWorley from './logo-worley.png';
+import logoHuawei from './logo-huawei.png';
+import logoTekktopia from './logo-tekktopia.png';
+import logoKlarnow from './logo-klarnow.svg';
+import logoDeltaAfrik from './logo-deltaafrik.svg';
+import logoBucc from './logo-bucc.svg';
+import workHoopopola from './work-hoopopola.svg';
 
 export {
   profile,
@@ -32,8 +39,15 @@ export {
   workTreasureTrove,
   workDynastyAfrica,
   workWholePurple,
+  workHoopopola,
   avatarSl,
   avatarDa,
   avatarOp,
   avatarWp,
+  logoWorley,
+  logoHuawei,
+  logoTekktopia,
+  logoKlarnow,
+  logoDeltaAfrik,
+  logoBucc,
 };

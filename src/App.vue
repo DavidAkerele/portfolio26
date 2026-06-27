@@ -49,6 +49,7 @@
     >
       <Services />
       <Marquee />
+      <Experience />
       <Works />
     </div>
 
@@ -68,6 +69,7 @@
     Works,
     aboutMe,
     Contact,
+    Experience,
   } from '@/components/sections';
   import { onMounted, type Ref, ref, watch } from 'vue';
   import {

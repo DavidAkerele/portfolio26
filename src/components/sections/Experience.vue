@@ -100,7 +100,10 @@
                   <img
                     :src="exp.logo"
                     :alt="exp.company"
-                    class="max-h-20 w-full max-w-[13rem] object-contain object-center mix-blend-multiply grayscale"
+                    class="w-full object-contain object-center mix-blend-multiply grayscale"
+                    :class="exp.company === 'BUCC Development Team'
+                      ? 'max-h-28 max-w-[15rem]'
+                      : 'max-h-20 max-w-[13rem]'"
                   />
                 </div>
 

@@ -87,7 +87,7 @@
           >
             <div
               class="w-full rounded-2xl border border-flax-smoke-200 bg-flax-smoke-50 overflow-hidden grid grid-cols-[1fr_2fr]"
-              style="height: 68vh"
+              style="height: 68vh; min-height: 360px"
             >
               <!-- Left panel: number · logo · meta -->
               <div class="flex flex-col justify-between border-r border-flax-smoke-200 p-8 lg:p-10">

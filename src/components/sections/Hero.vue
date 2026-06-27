@@ -63,7 +63,7 @@
 
           <div
             id="profile-container"
-            class="relative col-span-4 mt-10 h-[20vh] max-w-lg flex-col rounded-lg select-none sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+            class="relative col-span-4 mt-10 h-[30vh] max-w-lg flex-col rounded-lg select-none sm:mt-0 sm:h-full md:flex md:h-[50vh]"
           >
             <div class="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
             <img
@@ -83,7 +83,7 @@
               class="absolute right-0 bottom-0 flex translate-y-full flex-col items-end"
             >
               <p
-                class="3xl:text-base block leading-snug font-medium -tracking-tight uppercase"
+                class="3xl:text-base block text-xs leading-snug font-medium -tracking-tight uppercase sm:text-sm"
               >
                 Available for freelance work
               </p>

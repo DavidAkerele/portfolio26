@@ -40,13 +40,11 @@
         </span>
 
         <!-- Logo -->
-        <div
-          class="col-span-3 flex items-center md:col-span-2"
-        >
+        <div class="col-span-3 flex items-center justify-center md:col-span-2">
           <img
             :src="exp.logo"
             :alt="exp.company"
-            class="max-h-8 w-full max-w-[9rem] object-contain object-left mix-blend-screen brightness-200 contrast-200 grayscale"
+            class="max-h-8 w-full max-w-[9rem] object-contain object-center mix-blend-screen brightness-200 contrast-200 grayscale"
           />
         </div>
 
@@ -138,52 +136,52 @@
 
   const experiences = [
     {
-      role: 'Software Engineer',
-      company: 'Klarnow',
-      period: '2024 — Present',
+      role: 'Machine Learning Engineer',
+      company: 'KlarNow',
+      period: 'Jan 2026 — Present',
       type: 'Full-Time',
       logo: logoKlarnow,
-      tags: ['React', 'Node.js', 'TypeScript', 'REST APIs'],
+      tags: ['Machine Learning', 'Python', 'AI', 'Data Pipelines'],
     },
     {
-      role: 'Full-Stack Developer',
+      role: 'Lead Software Engineer',
       company: 'Tekktopia',
-      period: '2023 — 2024',
-      type: 'Contract',
+      period: '2025',
+      type: 'Full-Time',
       logo: logoTekktopia,
-      tags: ['Vue.js', 'Next.js', 'Python', 'Cloud'],
+      tags: ['Leadership', 'Full-Stack', 'TypeScript', 'Architecture'],
     },
     {
-      role: 'Frontend Developer',
-      company: 'BUCC Development Team',
-      period: '2022 — 2023',
-      type: 'Volunteer',
-      logo: logoBucc,
-      tags: ['React', 'TypeScript', 'UI/UX', 'GSAP'],
-    },
-    {
-      role: 'ICT & Network Engineer',
+      role: 'Data Analyst & Software Engineer',
       company: 'Huawei',
-      period: '2021 — 2022',
-      type: 'Internship',
+      period: 'Jan 2025 — Aug 2025',
+      type: 'Full-Time',
       logo: logoHuawei,
-      tags: ['Networking', 'Infrastructure', 'LTE', 'Routing'],
+      tags: ['Data Analysis', 'Python', 'Software Engineering', 'Networking'],
     },
     {
       role: 'Software & Systems Engineer',
       company: 'Worley Nigeria',
-      period: '2020 — 2021',
+      period: '2023 — 2024',
       type: 'Contract',
       logo: logoWorley,
       tags: ['Embedded Systems', 'Python', 'SCADA', 'Hardware'],
     },
     {
-      role: 'Junior Software Developer',
+      role: 'Software Developer',
       company: 'Delta Afrik Engineering',
-      period: '2019 — 2020',
+      period: '2022 — 2023',
       type: 'Full-Time',
       logo: logoDeltaAfrik,
-      tags: ['JavaScript', 'Web Dev', 'AutoCAD', 'Engineering'],
+      tags: ['JavaScript', 'Web Development', 'Engineering'],
+    },
+    {
+      role: 'Frontend Developer',
+      company: 'BUCC Development Team',
+      period: '2021 — 2022',
+      type: 'Volunteer',
+      logo: logoBucc,
+      tags: ['React', 'TypeScript', 'UI/UX'],
     },
   ];
 </script>

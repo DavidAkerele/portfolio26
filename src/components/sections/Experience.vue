@@ -86,43 +86,60 @@
             class="experience-card absolute left-[5%] right-[5%]"
           >
             <div
-              class="w-full rounded-2xl border border-flax-smoke-800/40 bg-[#111110] overflow-hidden grid grid-cols-[1fr_2fr]"
-              style="height: 65vh"
+              class="w-full rounded-2xl border border-flax-smoke-200 bg-white overflow-hidden grid grid-cols-[1fr_2fr]"
+              style="height: 68vh"
             >
               <!-- Left panel: number · logo · meta -->
-              <div class="flex flex-col justify-between border-r border-flax-smoke-800/40 p-8 lg:p-10">
-                <span class="font-mono text-flax-smoke-600 tracking-[0.35em] uppercase" style="font-size: 11px">
+              <div class="flex flex-col justify-between border-r border-flax-smoke-200 p-8 lg:p-10">
+                <span class="font-mono text-flax-smoke-400 tracking-[0.35em] uppercase" style="font-size: 11px">
                   {{ (i + 1).toString().padStart(2, '0') }}
                 </span>
-                <img
-                  :src="exp.logo"
-                  :alt="exp.company"
-                  class="max-h-8 w-auto max-w-[9rem] object-contain object-left mix-blend-screen brightness-200 contrast-200 grayscale"
-                />
-                <div class="space-y-2.5">
-                  <p class="text-flax-smoke-400 tracking-widest uppercase" style="font-size: 11px">{{ exp.period }}</p>
-                  <span class="inline-block border border-flax-smoke-700/60 text-flax-smoke-500 rounded-full px-3 py-1 tracking-wide" style="font-size: 11px">
+
+                <!-- Logo — bigger and centered -->
+                <div class="flex items-center justify-center py-4">
+                  <img
+                    :src="exp.logo"
+                    :alt="exp.company"
+                    class="max-h-14 w-full max-w-[10rem] object-contain object-center mix-blend-multiply grayscale"
+                  />
+                </div>
+
+                <div class="space-y-3">
+                  <p class="text-flax-smoke-500 tracking-widest uppercase" style="font-size: 11px">{{ exp.period }}</p>
+                  <span class="inline-block border border-flax-smoke-300 text-flax-smoke-500 rounded-full px-3 py-1 tracking-wide" style="font-size: 11px">
                     {{ exp.type }}
                   </span>
                 </div>
               </div>
 
-              <!-- Right panel: company · role · tags -->
-              <div class="flex flex-col justify-between p-8 lg:p-10 xl:p-14">
-                <div>
-                  <p class="text-flax-smoke-500 tracking-[0.25em] uppercase mb-5" style="font-size: 11px">{{ exp.company }}</p>
+              <!-- Right panel: company · role · description · tags -->
+              <div class="flex flex-col justify-between p-8 lg:p-10 xl:p-12">
+                <div class="flex flex-col gap-4">
+                  <p class="text-flax-smoke-400 tracking-[0.25em] uppercase" style="font-size: 11px">{{ exp.company }}</p>
                   <h3
-                    class="font-title text-flax-smoke-50 font-bold leading-[1.05]"
-                    style="font-size: clamp(1.6rem, 3.2vw, 2.8rem)"
+                    class="font-title text-flax-smoke-900 font-bold leading-[1.05]"
+                    style="font-size: clamp(1.5rem, 2.8vw, 2.4rem)"
                   >
                     {{ exp.role }}
                   </h3>
+                  <ul class="space-y-1.5">
+                    <li
+                      v-for="(point, j) in exp.description"
+                      :key="j"
+                      class="text-flax-smoke-600 flex gap-2"
+                      style="font-size: clamp(0.78rem, 1vw, 0.88rem); line-height: 1.6"
+                    >
+                      <span class="text-flax-smoke-400 mt-[3px] shrink-0">—</span>
+                      <span>{{ point }}</span>
+                    </li>
+                  </ul>
                 </div>
+
                 <div class="flex flex-wrap gap-2">
                   <span
                     v-for="tag in exp.tags"
                     :key="tag"
-                    class="border-flax-smoke-800/80 text-flax-smoke-400 rounded-full border px-3 py-1.5 tracking-wide"
+                    class="border-flax-smoke-200 text-flax-smoke-500 bg-flax-smoke-50 rounded-full border px-3 py-1.5 tracking-wide"
                     style="font-size: 11px"
                   >{{ tag }}</span>
                 </div>
@@ -170,6 +187,11 @@
       type: 'Full-Time',
       logo: logoKlarnow,
       tags: ['Machine Learning', 'Python', 'AI', 'Data Pipelines'],
+      description: [
+        'Building and deploying ML models that power real-time business intelligence and decision-support features across the KlarNow platform.',
+        'Designing robust data pipelines and ETL workflows in Python to ensure clean, reliable inputs for model training and inference.',
+        'Collaborating with product and engineering teams to ship AI-driven features that directly improve operational efficiency for clients.',
+      ],
     },
     {
       role: 'Lead Software Engineer',
@@ -178,6 +200,11 @@
       type: 'Full-Time',
       logo: logoTekktopia,
       tags: ['Leadership', 'Full-Stack', 'TypeScript', 'Architecture'],
+      description: [
+        'Led a cross-functional engineering team responsible for delivery across web and mobile, setting technical direction and reviewing all major system designs.',
+        'Architected scalable, maintainable systems using TypeScript and modern full-stack frameworks, reducing time-to-feature across multiple product lines.',
+        'Mentored junior and mid-level engineers through structured code reviews, pair programming, and weekly technical knowledge-sharing sessions.',
+      ],
     },
     {
       role: 'Data Analyst & Software Engineer',
@@ -186,6 +213,11 @@
       type: 'Full-Time',
       logo: logoHuawei,
       tags: ['Data Analysis', 'Python', 'Software Engineering', 'Networking'],
+      description: [
+        'Analysed large-scale network performance datasets to surface anomalies and operational insights, informing infrastructure decisions across the Nigeria region.',
+        'Built internal dashboards and automation tooling in Python that reduced manual reporting overhead for the infrastructure and operations team.',
+        'Contributed to software development projects alongside networking duties, bridging the gap between systems engineering and application-level problem-solving.',
+      ],
     },
     {
       role: 'Software & Systems Engineer',
@@ -194,6 +226,11 @@
       type: 'Contract',
       logo: logoWorley,
       tags: ['Embedded Systems', 'Python', 'SCADA', 'Hardware'],
+      description: [
+        'Developed and maintained SCADA and embedded systems for oil and gas infrastructure projects, ensuring reliable monitoring and control of critical assets.',
+        'Wrote Python automation scripts that significantly reduced manual operational processes, improving uptime and accuracy across site systems.',
+        'Worked closely with systems and process engineers to integrate hardware and software components in high-stakes industrial environments.',
+      ],
     },
     {
       role: 'Software Developer',
@@ -202,6 +239,11 @@
       type: 'Full-Time',
       logo: logoDeltaAfrik,
       tags: ['JavaScript', 'Web Development', 'Engineering'],
+      description: [
+        'Built web-based applications to support internal engineering workflows, project documentation, and inter-departmental reporting processes.',
+        'Developed JavaScript tools to automate repetitive engineering documentation tasks, freeing up engineer time for higher-value activities.',
+        'Contributed to the company\'s digital transformation efforts, modernising legacy processes with maintainable, well-structured web solutions.',
+      ],
     },
     {
       role: 'Frontend Developer',
@@ -210,6 +252,11 @@
       type: 'Volunteer',
       logo: logoBucc,
       tags: ['React', 'TypeScript', 'UI/UX'],
+      description: [
+        'Built and maintained the BUCC developer community platform using React and TypeScript, serving as the central hub for events, resources, and team showcases.',
+        'Led UI/UX improvements that increased platform accessibility and engagement among student developers across the university community.',
+        'Collaborated with a remote volunteer team using agile practices, contributing to open-source tooling and helping onboard new contributors.',
+      ],
     },
   ];
 
@@ -229,7 +276,6 @@
     ) as HTMLElement[];
     const n = cards.length;
 
-    // All cards except first start off-screen to the right
     gsap.set(cards.slice(1), { xPercent: 100 });
 
     ScrollTrigger.create({

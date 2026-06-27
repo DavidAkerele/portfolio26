@@ -58,7 +58,7 @@
         <template v-for="(p, i) in people" :key="i">
           <img
             :class="{ hidden: index !== i, invert: p.invert }"
-            class="relative z-10 size-full rounded-lg object-contain object-center grayscale lg:h-[85svh] p-12 lg:p-20"
+            class="relative z-10 size-full rounded-lg object-contain object-center lg:h-[85svh] p-12 lg:p-20"
             :src="p.profile"
             alt=""
           />
@@ -84,7 +84,7 @@
               <div class="columns-gap flex w-full flex-col gap-y-4">
                 <img
                   :class="{ invert: p.invert }"
-                  class="aspect-square size-full rounded-md object-contain object-center grayscale p-6"
+                  class="aspect-square size-full rounded-md object-contain object-center p-6"
                   :src="p.profile"
                   alt=""
                 />
@@ -263,7 +263,7 @@
       position: 'Football Club, Lagos Nigeria',
       tags: ['Web Design', 'React', 'Sports'],
       profile: logoSportingLagos,
-      invert: true,
+      invert: false,
     },
     {
       quote:

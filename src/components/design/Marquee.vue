@@ -1,7 +1,7 @@
 <template>
   <section
     id="marquee-section"
-    class="text-flax-smoke-200 relative mb-16 sm:mb-32 lg:mb-50 h-fit w-full overflow-clip leading-none will-change-auto"
+    class="text-flax-smoke-200 relative mb-50 h-fit w-full overflow-clip leading-none will-change-auto"
   >
     <div
       id="marquee-1"

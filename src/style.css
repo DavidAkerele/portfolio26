@@ -48,10 +48,10 @@ layer(base);
   --heading-4: clamp(1.25rem, 1.0359rem + 1.0707vw, 1.9995rem);
   --heading-3: clamp(1.5625rem, 1.2474rem + 1.5755vw, 2.6653rem);
   --heading-2: clamp(1.9531rem, 1.496rem + 2.2854vw, 3.5529rem);
-  --heading-1: clamp(1.8rem, -0.5rem + 7.5vw, 10.5rem);
-  --heading-display: clamp(2.5rem, 0.8rem + 8.5vw, 10.25rem);
+  --heading-1: clamp(3.5rem, 2.3571rem + 5.5143vw, 10.5rem);
+  --heading-display: clamp(4rem, 1.203rem + 10.0714vw, 10.25rem);
   --heading-body: clamp(1rem, 0.6071rem + 1.0143vw, 2.25rem);
-  --heading-1--alt: clamp(1.6rem, 0.2rem + 4.5vw, 5.625rem);
+  --heading-1--alt: clamp(3rem, 2.25rem + 3.75vw, 5.625rem);
 }
 
 @utility font-fancy {
@@ -192,15 +192,9 @@ layer(base);
 
   html {
     @apply overflow-x-clip;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    scrollbar-width: none;
   }
   body {
     @apply light-theme overflow-x-clip;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
   }
 
   /* body::before,
@@ -233,13 +227,5 @@ layer(base);
 
   ::selection {
     @apply bg-flax-smoke-500 text-flax-smoke-100;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
   }
 }

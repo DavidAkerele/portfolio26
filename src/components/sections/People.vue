@@ -8,7 +8,7 @@
       class="border-flax-smoke-300 grid w-full grid-cols-12 border-b-[1px] pb-[clamp(2.25rem,2.1786rem_+_0.3571vi,2.5rem)]"
     >
       <h3
-        class="heading-1 text-flax-smoke-950 col-span-full leading-none font-bold uppercase will-change-auto"
+        class="heading-1 max-sm:heading-2 text-flax-smoke-950 col-span-full leading-none font-bold uppercase will-change-auto"
       >
         Don't take my <br />
         word for it /

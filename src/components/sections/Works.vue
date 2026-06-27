@@ -77,7 +77,7 @@
               >
                 {{ work.name }}
               </h3>
-              <div class="flex flex-wrap gap-1.5 select-none">
+              <div class="flex gap-1.5 select-none">
                 <p
                   class="border-flax-smoke-300 hover:bg-flax-smoke-300 hover:text-flax-smoke-900 rounded-full border px-4 py-2 transition-[background-color,color] duration-500 ease-in-out"
                   v-for="tag in work.tags"

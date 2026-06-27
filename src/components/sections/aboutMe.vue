@@ -37,7 +37,7 @@
         <img
           :src="profile2"
           alt="David Akerele"
-          class="aspect-[1/1.5] w-full rounded-lg object-cover object-top"
+          class="aspect-[1/1.5] w-full rounded-lg object-cover object-top grayscale"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">

@@ -70,7 +70,7 @@
               id="profile-img"
               src="/profile.webp"
               alt="David Akerele"
-              class="size-full scale-90 rounded-lg object-cover object-top"
+              class="size-full scale-90 rounded-lg object-cover object-top grayscale"
             />
           </div>
 

@@ -129,6 +129,7 @@
     workTreasureTrove,
     workDynastyAfrica,
     workHoopopola,
+    workWholePurple,
   } from '@/assets/images';
   import { ProjectOverlay } from '@/components/design';
 
@@ -242,6 +243,21 @@
       solution:
         'Architected a Next.js application with TypeScript throughout, clean API design, and a component library built for reuse and consistency. Performance budgets were enforced from day one.',
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Vercel'],
+    },
+    {
+      name: 'Whole Purple',
+      category: 'Full-Stack & E-Commerce',
+      tags: ['Next.js', 'TypeScript', 'Prisma'],
+      screenshot: workWholePurple,
+      url: 'https://wholepurple.vercel.app/',
+      year: '2025',
+      description:
+        'A premium full-stack e-commerce ecosystem for ethically sourced fresh produce, marinated proteins, and organic pantry essentials — built with a cinematic storefront and a powerful operational backbone.',
+      challenge:
+        'The client needed a single platform to serve multiple user roles — Clients, Shop Managers, and Admins — each with distinct permissions, alongside a complex product catalogue, real-time inventory, and seamless order fulfilment workflows.',
+      solution:
+        'Designed a robust role-based access system with Prisma and Supabase, built a high-fidelity Next.js storefront with TypeScript, and delivered a suite of executive dashboards giving managers live inventory health, fulfilment velocity charts, and cross-platform performance analytics. Stripe powers a smooth, conversion-optimised checkout.',
+      tech: ['Next.js 15', 'TypeScript', 'Prisma', 'Supabase', 'Tailwind CSS', 'Stripe'],
     },
   ];
 

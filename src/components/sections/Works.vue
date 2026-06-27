@@ -128,7 +128,6 @@
     workOnePortal,
     workTreasureTrove,
     workDynastyAfrica,
-    workHoopopola,
     workWholePurple,
   } from '@/assets/images';
   import { ProjectOverlay } from '@/components/design';
@@ -228,21 +227,6 @@
       solution:
         'Rebuilt the storefront in Vue.js with Tailwind CSS, creating a clean product catalogue with filters by brand and type, an online repair booking form, and a polished mobile-first layout. Page speed scores improved significantly and phone enquiries for bookings dropped as the online system took over.',
       tech: ['Vue.js', 'Tailwind CSS', 'JavaScript', 'Netlify'],
-    },
-    {
-      name: "Ho'opopola",
-      category: 'Full-Stack & Web Application',
-      tags: ['Next.js', 'TypeScript', 'Full-Stack'],
-      screenshot: workHoopopola,
-      url: '',
-      year: '2025',
-      description:
-        'A full-stack web application crafted with meticulous attention to detail — delivering a seamless, high-performance experience built on modern tooling and clean architecture.',
-      challenge:
-        'The project demanded a scalable, maintainable codebase that could handle complex business logic while keeping the user experience effortless and fast across all devices.',
-      solution:
-        'Architected a Next.js application with TypeScript throughout, clean API design, and a component library built for reuse and consistency. Performance budgets were enforced from day one.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Vercel'],
     },
     {
       name: 'Whole Purple',

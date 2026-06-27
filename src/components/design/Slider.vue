@@ -272,7 +272,7 @@
       position: 'Creative & Marketing Agency',
       tags: ['Frontend', 'Branding', 'Performance'],
       profile: logoDynastyAfrica,
-      invert: true,
+      invert: false,
     },
     {
       quote:

@@ -79,7 +79,7 @@
         </div>
 
         <!-- Stacked cards -->
-        <div class="relative w-full h-full flex items-center">
+        <div class="relative w-full h-full flex items-center overflow-hidden">
           <div
             v-for="(exp, i) in experiences"
             :key="i"

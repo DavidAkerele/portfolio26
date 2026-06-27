@@ -34,15 +34,11 @@
       <div
         class="pointer-events-none col-span-full content-end rounded-lg select-none md:col-span-4"
       >
-        <div
-          class="flex-center aspect-[1/1.5] w-full rounded-lg bg-flax-smoke-900"
-        >
-          <span
-            class="font-title text-flax-smoke-700 select-none"
-            style="font-size: clamp(3rem, 6vw, 6rem); font-weight: 800"
-            >DA</span
-          >
-        </div>
+        <img
+          :src="profile2"
+          alt="David Akerele"
+          class="aspect-[1/1.5] w-full rounded-lg object-cover object-top"
+        />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
         <p
@@ -81,6 +77,7 @@
     xToZero,
     animateAboutMeSectionLeave,
   } from '@/animations';
+  import { profile2 } from '@/assets/images';
 import { textSplitterIntoChar } from '@/functions';
   import { onBeforeMount, onMounted, ref } from 'vue';
 

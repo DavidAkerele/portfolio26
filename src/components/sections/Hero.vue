@@ -66,16 +66,12 @@
             class="relative col-span-4 mt-10 h-[20vh] max-w-lg flex-col rounded-lg select-none sm:mt-0 sm:h-full md:flex md:h-[50vh]"
           >
             <div class="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
-            <div
+            <img
               id="profile-img"
-              class="flex-center size-full scale-90 rounded-lg bg-flax-smoke-900"
-            >
-              <span
-                class="font-title text-flax-smoke-700 select-none"
-                style="font-size: clamp(3rem, 8vw, 7rem); font-weight: 800"
-                >DA</span
-              >
-            </div>
+              src="/profile.webp"
+              alt="David Akerele"
+              class="size-full scale-90 rounded-lg object-cover object-top"
+            />
           </div>
 
           <!-- content-end justify-self-end  -->

@@ -84,14 +84,13 @@
             v-for="(exp, i) in experiences"
             :key="i"
             class="experience-card absolute left-[5%] right-[5%]"
-            :style="i > 0 ? 'transform: translateX(120%)' : ''"
           >
             <div
-              class="w-full rounded-2xl border border-flax-smoke-800/40 bg-flax-smoke-950 overflow-hidden grid grid-cols-[1fr_2fr]"
+              class="w-full rounded-2xl border border-flax-smoke-200 bg-flax-smoke-50 overflow-hidden grid grid-cols-[1fr_2fr]"
               style="height: 68vh"
             >
               <!-- Left panel: number · logo · meta -->
-              <div class="flex flex-col justify-between border-r border-flax-smoke-800/40 p-8 lg:p-10">
+              <div class="flex flex-col justify-between border-r border-flax-smoke-200 p-8 lg:p-10">
                 <span class="font-mono text-flax-smoke-400 tracking-[0.35em] uppercase" style="font-size: 11px">
                   {{ (i + 1).toString().padStart(2, '0') }}
                 </span>
@@ -101,7 +100,7 @@
                   <img
                     :src="exp.logo"
                     :alt="exp.company"
-                    class="max-h-14 w-full max-w-[10rem] object-contain object-center mix-blend-screen brightness-200 contrast-200 grayscale"
+                    class="max-h-14 w-full max-w-[10rem] object-contain object-center mix-blend-multiply grayscale"
                   />
                 </div>
 
@@ -127,7 +126,7 @@
                     <li
                       v-for="(point, j) in exp.description"
                       :key="j"
-                      class="text-flax-smoke-400 flex gap-2"
+                      class="text-flax-smoke-600 flex gap-2"
                       style="font-size: clamp(0.78rem, 1vw, 0.88rem); line-height: 1.6"
                     >
                       <span class="text-flax-smoke-400 mt-[3px] shrink-0">—</span>
@@ -140,7 +139,7 @@
                   <span
                     v-for="tag in exp.tags"
                     :key="tag"
-                    class="border-flax-smoke-700/60 text-flax-smoke-400 rounded-full border px-3 py-1.5 tracking-wide"
+                    class="border-flax-smoke-300 text-flax-smoke-600 bg-flax-smoke-100 rounded-full border px-3 py-1.5 tracking-wide"
                     style="font-size: 11px"
                   >{{ tag }}</span>
                 </div>

@@ -23,6 +23,10 @@ import logoKlarnow from './logo-klarnow.svg';
 import logoDeltaAfrik from './logo-deltaafrik.svg';
 import logoBucc from './logo-bucc.svg';
 import workHoopopola from './work-hoopopola.svg';
+import logoSportingLagos from './logo-sporting-lagos.svg';
+import logoDynastyAfrica from './logo-dynasty-africa.png';
+import logoOnePortal from './logo-oneportal.svg';
+import logoWholePurple from './logo-wholepurple.png';
 
 export {
   profile,
@@ -50,4 +54,8 @@ export {
   logoKlarnow,
   logoDeltaAfrik,
   logoBucc,
+  logoSportingLagos,
+  logoDynastyAfrica,
+  logoOnePortal,
+  logoWholePurple,
 };

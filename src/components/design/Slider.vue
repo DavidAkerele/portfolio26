@@ -57,8 +57,8 @@
       >
         <template v-for="(p, i) in people" :key="i">
           <img
-            :class="{ hidden: index !== i }"
-            class="relative z-10 size-full rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale lg:h-[85svh]"
+            :class="{ hidden: index !== i, invert: p.invert }"
+            class="relative z-10 size-full rounded-lg object-contain object-center mix-blend-screen brightness-200 contrast-150 grayscale lg:h-[85svh] p-12 lg:p-20"
             :src="p.profile"
             alt=""
           />
@@ -83,7 +83,8 @@
             <div class="col-span-3">
               <div class="columns-gap flex w-full flex-col gap-y-4">
                 <img
-                  class="aspect-square size-full rounded-md object-cover object-center mix-blend-screen brightness-90 grayscale"
+                  :class="{ invert: p.invert }"
+                  class="aspect-square size-full rounded-md object-contain object-center mix-blend-screen brightness-200 contrast-150 grayscale p-6"
                   :src="p.profile"
                   alt=""
                 />
@@ -122,7 +123,7 @@
 </template>
 
 <script setup lang="ts">
-  import { avatarSl, avatarDa, avatarOp, avatarWp } from '@/assets/images';
+  import { logoSportingLagos, logoDynastyAfrica, logoOnePortal, logoWholePurple } from '@/assets/images';
   import { Button } from '../common';
   import { computed, onMounted, ref } from 'vue';
   import { useWindowSize } from '@vueuse/core';
@@ -261,7 +262,8 @@
       author: 'Sporting Lagos FC',
       position: 'Football Club, Lagos Nigeria',
       tags: ['Web Design', 'React', 'Sports'],
-      profile: avatarSl,
+      profile: logoSportingLagos,
+      invert: false,
     },
     {
       quote:
@@ -269,7 +271,8 @@
       author: 'Dynasty Africa',
       position: 'Creative & Marketing Agency',
       tags: ['Frontend', 'Branding', 'Performance'],
-      profile: avatarDa,
+      profile: logoDynastyAfrica,
+      invert: false,
     },
     {
       quote:
@@ -277,7 +280,8 @@
       author: 'OnePortal Estates',
       position: 'Luxury Real Estate, Lagos Nigeria',
       tags: ['Next.js', 'TypeScript', 'Real Estate'],
-      profile: avatarOp,
+      profile: logoOnePortal,
+      invert: false,
     },
     {
       quote:
@@ -285,7 +289,8 @@
       author: 'Whole Purple',
       position: 'Organic Food E-Commerce',
       tags: ['Full-Stack', 'Next.js', 'Prisma'],
-      profile: avatarWp,
+      profile: logoWholePurple,
+      invert: true,
     },
   ];
 </script>

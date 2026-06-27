@@ -71,7 +71,10 @@
               {{ work.category }}
             </p>
             <div class="items-center justify-between sm:flex">
-              <h3 class="heading-3 font-title! font-bold uppercase">
+              <h3
+                class="font-title! font-bold uppercase"
+                :class="work.name === 'Treasure Trove Sewing' ? 'heading-4' : 'heading-3'"
+              >
                 {{ work.name }}
               </h3>
               <div class="flex gap-1.5 select-none">
